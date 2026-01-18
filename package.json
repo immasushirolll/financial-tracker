@@ -1,0 +1,10 @@
+{
+  "name": "financial-tracker",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "github:immasushirolll/financial-tracker",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
