@@ -1,0 +1,33 @@
+html {
+  background-color: #c2c689;
+  font-family: "Mansalva", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  font-family: "Mansalva", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #422b23;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 800;
+  color: #422b23;
+  text-align: center;
+}
+
+/* classes */
+.title {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+}

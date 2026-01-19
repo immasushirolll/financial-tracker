@@ -6,16 +6,31 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <meta
-      http-equiv="X-Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <title>Hello from Electron renderer!</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+    </style> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    <title>Financial-Tracker-App</title>
   </head>
+
   <body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋send help</p>
-    <p id="info"></p>
+    <h1>financial tracker</h1>
+    <p>👋hi dad, i hope this helps!</p>
+    <p> input your new transactions below:</p>
+    <textarea id="transactions" rows="2" cols="50"></textarea>
+    <br />
+
+    <form action="writer.py" method="POST">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="portfolio">Portfolio</label><br>
+        <input type="text" id="portfolio" name="portfolio"><br><br>
+    </form>
+
+    <button id="processBtn"> process </button>
   </body>
   <script src="./renderer.js"></script>
 </html>
