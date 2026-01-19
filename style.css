@@ -1,19 +1,17 @@
 html {
   background-color: #c2c689;
-  font-family: "Mansalva", sans-serif;
-  font-weight: 800;
-  font-style: normal;
 }
 
 body {
-  font-family: "Mansalva", sans-serif;
+  font-family: "Gamja Flower", sans-serif;
   font-weight: 800;
   font-style: normal;
+  font-size: 36px;
   color: #422b23;
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 64px;
   font-weight: 800;
   color: #422b23;
   text-align: center;
@@ -28,6 +26,5 @@ h1 {
 }
 
 p {
-  font-size: 20px;
   line-height: 1.6;
 }
