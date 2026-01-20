@@ -1,6 +1,22 @@
 [
   {
-    "Name": "dsfns;oij",
-    "timestamp": "2026-01-19T20:35:41.752Z"
+    "Name": "Xu_TD",
+    "Portfolio": "USD_TFSA",
+    "BuySell": "buy",
+    "Amount": 13,
+    "Price": 1343,
+    "FinalBuyPrice": 23423,
+    "StockCode": "dfs",
+    "Timestamp": "2026-01-20T09:46:28.887Z"
+  },
+  {
+    "Name": "Xu_TD",
+    "Portfolio": "USD_TFSA",
+    "BuySell": "buy",
+    "Amount": 13,
+    "Price": 1343,
+    "FinalBuyPrice": 23423,
+    "StockCode": "dfs",
+    "Timestamp": "2026-01-20T09:46:29.587Z"
   }
 ]

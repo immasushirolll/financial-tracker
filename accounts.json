@@ -1,0 +1,107 @@
+[
+  {
+    "Name": "Xu_TD",
+    "Portfolio": "USD_TFSA",
+    "InitInvest": 50000,
+    "CurrTotal": 50000,
+    "Timestamp": "2026-01-20T09:46:28.000Z"
+  },
+  {
+    "Name": "Xu_TD",
+    "Portfolio": "USD_CASH",
+    "InitInvest": 50000,
+    "CurrTotal": 50000,
+    "Timestamp": "2026-01-20T09:46:29.000Z"
+  },
+  {
+    "Name": "Xu_TD",
+    "Portfolio": "CAD_TFSA",
+    "InitInvest": 50000,
+    "CurrTotal": 50000,
+    "Timestamp": "2026-01-20T09:46:29.000Z"
+  },
+  {
+    "Name": "Xu_TD",
+    "Portfolio": "CAD_SDRSP",
+    "InitInvest": null,
+    "CurrTotal": null,
+    "Timestamp": "2026-01-20T09:46:29.000Z"
+  },
+  {
+    "Name": "Xu_WS",
+    "Portfolio": "CAD_SAVING",
+    "InitInvest": 5095,
+    "CurrTotal": null,
+    "Timestamp": "2026-01-20T09:46:29.000Z"
+  },
+  {
+    "Name": "Jia_TD",
+    "Portfolio": "USD_TFSA",
+    "InitInvest": 50000,
+    "CurrTotal": 50000,
+    "Timestamp": "2026-01-20T09:46:28.000Z"
+  },
+  {
+    "Name": "Jia_TD",
+    "Portfolio": "USD_CASH",
+    "InitInvest": 50000,
+    "CurrTotal": 50000,
+    "Timestamp": "2026-01-20T09:46:29.000Z"
+  },
+  {
+    "Name": "Jia_TD",
+    "Portfolio": "CAD_TFSA",
+    "InitInvest": 50000,
+    "CurrTotal": 50000,
+    "Timestamp": "2026-01-20T09:46:29.000Z"
+  },
+  {
+    "Name": "Jia_TD",
+    "Portfolio": "CAD_SDRSP",
+    "InitInvest": null,
+    "CurrTotal": null,
+    "Timestamp": "2026-01-20T09:46:29.000Z"
+  },
+  {
+    "Name": "Jia_WS",
+    "Portfolio": "CAD_SAVING",
+    "InitInvest": 5095,
+    "CurrTotal": null,
+    "Timestamp": "2026-01-20T09:46:29.000Z"
+  },
+  {
+    "Name": "Jia_WS",
+    "Portfolio": "CAD_SAVING",
+    "InitInvest": 50000,
+    "CurrTotal": 50000,
+    "Timestamp": "2026-01-20T09:46:29.000Z"
+  },
+  {
+    "Name": "Jin_TD",
+    "Portfolio": "USD_TFSA",
+    "InitInvest": null,
+    "CurrTotal": null,
+    "Timestamp": "2026-01-20T09:46:29.000Z"
+  },
+  {
+    "Name": "Jin_TD",
+    "Portfolio": "CAD_TFSA",
+    "InitInvest": null,
+    "CurrTotal": null,
+    "Timestamp": "2026-01-20T09:46:29.000Z"
+  },
+  {
+    "Name": "Yu_TD",
+    "Portfolio": "USD_TFSA",
+    "InitInvest": null,
+    "CurrTotal": null,
+    "Timestamp": "2026-01-20T09:46:29.000Z"
+  },
+  {
+    "Name": "Yu_TD",
+    "Portfolio": "CAD_TFSA",
+    "InitInvest": null,
+    "CurrTotal": null,
+    "Timestamp": "2026-01-20T09:46:29.000Z"
+  }
+]

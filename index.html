@@ -7,9 +7,7 @@
       content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com"
     />
     <link rel="stylesheet" href="./style.css" />
-    <!-- <style>
-    @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
-    </style> -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
@@ -44,8 +42,8 @@
 
         <label for="buy/sell">Buy/Sell</label><br>
         <select type="select" id="buy/sell_test" name="buy/sell_test">
-            <option>B</option>
-            <option>S</option>
+            <option value="buy">B</option>
+            <option value="sell">S</option>
         </select><br>
 
         <label for="amount">Amount</label><br>
@@ -62,7 +60,7 @@
     </form>
 
     <button id="write"> process transaction </button>
-    <!-- make picture button -->
+    <button id="router"> click to see all your transactions </button>
   </body>
   <script src="./renderer.js"></script>
 </html>
