@@ -21,17 +21,48 @@
     <h1>ദ്ദി（• ˕ •マ.ᐟ</h1>
     <p>👋hi dad, i hope this helps!</p>
     <p> input your new transactions below:</p>
-    <textarea id="transactions" rows="2" cols="50"></textarea>
-    <br />
 
     <form action="writer.py" method="POST">
         <label for="name">Name</label><br>
-        <input type="text" id="name" name="name" placeholder="enter name"><br>
+        <select type="select" id="name_test" name="name_test">
+          <option>Xu_TD</option>
+          <option>Xu_WS</option>
+          <option>Jin_TD</option>
+          <option>Yu_TD</option>
+          <option>Jia_TD</option>
+          <option>Jia_WS</option>
+        </select><br>
+
         <label for="portfolio">Portfolio</label><br>
-        <input type="text" id="portfolio" name="portfolio"><br><br>
+        <select type="select" id="portfolio_test" name="portfolio_test">
+            <option>USD_TFSA</option>
+            <option>USD_CASH</option>
+            <option>CAD_TFSA</option>
+            <option>CAD_SDRSP</option>
+            <option>CAD_SAVING</option>
+        </select><br>
+
+        <label for="buy/sell">Buy/Sell</label><br>
+        <select type="select" id="buy/sell_test" name="buy/sell_test">
+            <option>B</option>
+            <option>S</option>
+        </select><br>
+
+        <label for="amount">Amount</label><br>
+        <input type="text" id="amount" name="amount" placeholder="enter amount"><br>
+
+        <label for="price">Price</label><br>
+        <input type="text" id="price" name="price" placeholder="enter price"><br>
+
+        <label for="finalbuyprice">Final Buy Price</label><br>
+        <input type="text" id="finalbuyprice" name="finalbuyprice" placeholder="enter final buy price"><br>   
+
+        <label for="stockcode">Stock Code</label><br>        
+        <input type="text" id="stockcode" name="stockcode" placeholder="put the stock's code i.e. NVD"><br>
     </form>
 
     <button id="write"> process transaction </button>
+    <!-- make picture button -->
   </body>
   <script src="./renderer.js"></script>
 </html>

@@ -1,3 +1,6 @@
+### Jan 19:
+Looks good, things are working, no change to current plan, see commit messages, will update if there's a major design change
+
 ### Jan 17 current ideation:
 store data as jsons for now for easy schema changes and manipulation i.e. flattening, expanding
 
