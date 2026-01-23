@@ -33,3 +33,19 @@ window.addEventListener("DOMContentLoaded", () => {
         window.electronAPI.router('transactions.html')
     });
 });
+
+window.api.getTableData().then(data => {
+    const tbody = document.getElementById("table-records");
+
+    data.forEach(row => {
+        const tr = document.createElement("tr");
+
+        tr.innerHTML = `
+            <td>${row.name}</td>
+            <td>${row.age}</td>
+            <td>${row.city}</td>
+        `;
+
+        tbody.appendChild(tr);
+    });
+});

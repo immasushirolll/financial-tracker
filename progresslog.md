@@ -1,3 +1,9 @@
+### Jan 22:
+main.js        → owns the data
+preload.js    → exposes safe API
+renderer.js   → fills the table
+index.html    → table layout only
+
 ### Jan 19:
 Looks good, things are working, no change to current plan, see commit messages, will update if there's a major design change
 

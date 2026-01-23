@@ -54,6 +54,21 @@ ipcMain.on("router", (event, value) => {
     win.loadFile("transactions.html");
 });
 
+// .handle is more for a request-response event than an event that just happens like in .on
+ipcMain.handle("get-transactions-json", async () => {
+    if (fs.existsSync(JSON_PATH)) {
+        try {
+            const data = JSON.parse(fs.readFileSync(JSON_PATH, "utf8"));
+            return data;
+        } catch (err) {
+            console.error("Invalid JSON:", err);
+            return [];
+        }
+    } else {
+        return [];
+    }
+});
+
 app.on("window-all-closed", () => {
     app.quit();
 });
