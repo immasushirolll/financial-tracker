@@ -1,4 +1,11 @@
 console.log("renderer loaded");
+// let thePath = "/home/immasushiroll/Windows/Users/jane8/repos/financial-tracker/data.json";
+
+// var fs = require('fs');
+// fs.readFile(thePath, 'utf8', function (err, data) {
+//   if (err) return console.log(err);
+//     console.log(data);
+// });
 
 window.addEventListener("DOMContentLoaded", () => {
     const name_input = document.getElementById("name_test");
@@ -9,8 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const finalbuyprice_input = document.getElementById("finalbuyprice");
     const stockcode_input = document.getElementById("stockcode");
     const button = document.getElementById("write");
-    console.log(button);
-
+    // console.log(button);
 
     button.addEventListener("click", () => {
 
@@ -34,18 +40,28 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-window.api.getTableData().then(data => {
+async function loadTable() {
+    const data = await window.electronAPI.getTransactionsJSON();
     const tbody = document.getElementById("table-records");
+
+    tbody.innerHTML = "";
 
     data.forEach(row => {
         const tr = document.createElement("tr");
 
         tr.innerHTML = `
-            <td>${row.name}</td>
-            <td>${row.age}</td>
-            <td>${row.city}</td>
+            <td>${row.Name}</td>
+            <td>${row.Portfolio}</td>
+            <td>${row.BuySell}</td>
+            <td>${row.Amount}</td>
+            <td>${row.Price}</td>
+            <td>${row.FinalBuyPrice}</td>
+            <td>${row.StockCode}</td>
+            <td>${row.Timestamp}</td>
         `;
 
         tbody.appendChild(tr);
     });
-});
+}
+
+loadTable();

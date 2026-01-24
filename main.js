@@ -1,9 +1,19 @@
+console.log("mainjs loaded");
+
 const { app, BrowserWindow, ipcMain } = require("electron/main");
 const fs = require("fs");
 const path = require("path");
 
 const JSON_PATH =
     "/home/immasushiroll/Windows/Users/jane8/repos/financial-tracker/data.json";
+
+// fs.readFile(JSON_PATH, "utf8", (err, data) => {
+//     if (err) {
+//         console.log("File read failed:", err);
+//         return;
+//     }
+//     console.log("File data:", data);
+// });
 
 let win;
 
@@ -56,17 +66,9 @@ ipcMain.on("router", (event, value) => {
 
 // .handle is more for a request-response event than an event that just happens like in .on
 ipcMain.handle("get-transactions-json", async () => {
-    if (fs.existsSync(JSON_PATH)) {
-        try {
-            const data = JSON.parse(fs.readFileSync(JSON_PATH, "utf8"));
-            return data;
-        } catch (err) {
-            console.error("Invalid JSON:", err);
-            return [];
-        }
-    } else {
-        return [];
-    }
+    const filePath = path.join(__dirname, "data.json");
+    const rawData = fs.readFileSync(filePath, "utf-8");
+    return JSON.parse(rawData);
 });
 
 app.on("window-all-closed", () => {
